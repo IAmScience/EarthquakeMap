@@ -1,0 +1,18 @@
+/*
+ * Quake.css
+ * For use with Earthquake assignment for Bluewolf
+ *
+ * Author: Jesse Morin
+ * Date: 12/11/2014
+*/
+
+html, body, #map-canvas {position: relative; height: 100%; width: 100% margin: 0; padding: 0; z-index: -1;}
+#searchboxinput { width: 35%; padding: 0 12px 0 12px; font-size: 15px;  box-shadow: 3px 3px 1px #888888; }
+#largestquakes { width: auto; height: auto; box-shadow: 3px 3px 1px #888888; background-color: rgba(36,36,36,0.6); padding: 3px 6px; color: #e8e8e8; }
+#topQuakeContent { height: auto; overflow: hidden; -webkit-user-select: none; -moz-user-select: none; -khtml-user-select: none; -ms-user-select: none; }
+#topQuakeHeader:hover { cursor: pointer; cursor: hand;   } 
+#topQuakeList { font-size: 15px; }
+#topQuakeList > div:hover { font-size: 16px; color: blue; cursor: pointer; cursor: hand; }
+#content { min-width: 225px !important; }
+#infoHeading { text-align: center; font-size: 18px; }
+.controls { margin: 16px 12px; border: 1px solid #adadad; height: 32px; }
