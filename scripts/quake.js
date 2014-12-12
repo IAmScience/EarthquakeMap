@@ -101,7 +101,9 @@ function initialize() {
 						icon: quakeIcon,
 						title: 'Magnitude: ' + val[i].magnitude,
 						position: latlng
-					});							
+					});
+
+					markers.push(marker);
 					
 					// When the marker is clicked display an InfoWindow with the quake information at the marker location
 					var contentString = '<div id="content">'+
