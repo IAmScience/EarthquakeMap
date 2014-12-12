@@ -82,10 +82,9 @@ function initialize() {
 
 			markers.push(marker);
 			bounds.extend(place.geometry.location);
-		}
-
+		}		
 		map.fitBounds(bounds);
-		map.setZoom(8);
+		
 		
 		// Query the GeoNames service for nearby earthquakes
 		var center = map.getCenter();
@@ -104,6 +103,7 @@ function initialize() {
 					});
 
 					markers.push(marker);
+					bounds.extend(marker.getPosition());
 					
 					// When the marker is clicked display an InfoWindow with the quake information at the marker location
 					var contentString = '<div id="content">'+
@@ -116,6 +116,9 @@ function initialize() {
 				}
 			});
 		});
+		
+		map.fitBounds(bounds);
+		map.setZoom(8);
 	});
 }
 google.maps.event.addDomListener(window, 'load', initialize);
